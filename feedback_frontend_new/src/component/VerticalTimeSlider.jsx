@@ -140,7 +140,7 @@ export default function VerticalTimeSlider({
           style={{ bottom: posPx - clockSize / 2, width: clockSize, height: clockSize }}
           onMouseDown={startDrag}
           onTouchStart={startDrag}
-          onTouchMove={(e) => { e.preventDefault(); moveDrag(e); }}
+          onTouchMove={(e) => {  moveDrag(e); }}
           onTouchEnd={endDrag}
         >
           <img src={images.clock} alt="" draggable={false} className="pointer-events-none w-full h-full" />
