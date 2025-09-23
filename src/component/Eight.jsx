@@ -54,7 +54,7 @@ function Eight({ onNext }) {
       setLoading(true);
       setMessage(null);
 
-      const res = await fetch("http://13.232.29.15/api/", {
+      const res = await fetch("http://3.109.132.143/api/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
