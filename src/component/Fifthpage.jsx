@@ -43,7 +43,6 @@
 
 // export default Fifthpage;
 
-
 // Fifthpage.jsx
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -52,11 +51,11 @@ import Checklist from "./Checklist";
 
 function Fifthpage({ onNext }) {
   const options = [
-    "I would recommend Parsec to friends",
-    "I would recommend Parsec to family",
-    "I would recommend Parsec to a school",
-    "I saw science from a new perspective",
-    "I had a fun and engaging time",
+    " Will definitely recommend Parsec to friends",
+    "Will definitely recommend Parsec to family",
+    "Will definitely recommend Parsec to a school",
+    "Experienced science from a new perspective",
+    "It was a fun and engaging experience",
   ];
 
   const dispatch = useDispatch();
@@ -80,8 +79,8 @@ function Fifthpage({ onNext }) {
     <div className='flex flex-col min-h-full bg-[url("/background.svg")] bg-no-repeat bg-cover items-center relative overflow-hidden'>
       <div className="flex flex-col items-start w-full px-28 py-28 gap-20 relative h-[20%]">
         <div className="leading-[100%] h-[40%] font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[5rem] text-justify flex flex-col gap-1.5">
-          <div>Choose everything</div>
-          <div>that applies ?</div>
+          <div>Pick anything or </div>
+          <div>everything:{')'}</div>
         </div>
       </div>
 
@@ -107,4 +106,3 @@ function Fifthpage({ onNext }) {
 }
 
 export default Fifthpage;
-

@@ -3,34 +3,36 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 
-function NinethPage({ onHome }) {
-    useEffect(() => {
+function NinethPage({ onHome ,isActive }) {
+  useEffect(() => {
+    if (!isActive) return;            // <-- don't start timer unless page visible
+
     const timer = setTimeout(() => {
       onHome();
-    }, 10000); // 10000ms = 10 seconds
+    }, 30000); // 10s
 
-    return () => clearTimeout(timer); // cleanup if component unmounts or user clicks home
-  }, [onHome]);
+    return () => clearTimeout(timer);
+  }, [isActive, onHome]);
 
   
   return (
     <div className='flex flex-col h-full bg-[url("/background.svg")] bg-no-repeat bg-cover items-center relative overflow-hidden'>
       <div className="flex flex-col justify-center items-start w-full px-28 py-28 gap-10 relative h-full">
-        <div className="leading-[100%] font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[5rem] text-justify flex flex-col gap-1.5">
-          <div>Mission Just</div>
-          <div>Began! 🚀</div>
+        <div className="leading-[100%] font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[4rem] text-justify flex flex-col gap-1.5">
+          <div>Mission Take</div>
+          <div>off! 🚀</div>
         </div>
-        <div className="flex justify-start  w-full box-border ">
+        <div className="flex justify-start  w-full box-border gap-[5rem] ">
           <div className="flex flex-col items-start gap-6 w-[60%] border-box">
             <div className="flex flex-col items-start text-justify text-[1rem] md:text-[1.4rem] lg:text-[1.8rem] font-inter-custom ">
               <div className="font-semibold">Thank you! 🚀</div>
-              <div>Your feedback is the launch fuel that </div>
-              <div> will power Parsec all the way to Mars.</div>
+              <div>Your valuable feedback will launch </div>
+              <div>and power Parsec all the way to Mars.</div>
             </div>
             <div className="flex flex-col items-start text-justify text-[1rem] md:text-[1.4rem] lg:text-[1.8rem] font-inter-custom">
               <div>Thanks for being part of our crew —</div>
-              <div>we can’t wait to share the journey with </div>
-              <div>you!</div>
+              <div>we can’t wait to share our exiciting  </div>
+              <div>journey with you!</div>
             </div>
           </div>
           <div className="flex justify-center w-[40%] relative">

@@ -3,22 +3,21 @@ import React from "react";
 function Firstpage({onNext}) {
   return (
     <div className='flex flex-col min-h-full w-full bg-[url("/background.svg")] bg-cover bg-no-repeat px-8 py-28 items-center relative overflow-hidden'>
-      <div className="flex flex-col py-24 px-12  items-start text-left  w-full gap-[2rem] overflow-hidden">
+      <div className="flex flex-col py-24 px-12  items-start text-left  w-full gap-[1rem] overflow-hidden">
         <div className="text-justify w-full">
-          <p className="leading-[100%]  font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[6rem] ">
-            Help Parsec reach{" "}
+          <p className="leading-[100%]  font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[5rem] ">
+           Help launch Parsec to {" "}
           </p>
         </div>
-        <div className="leading-[100%] .font-unica-custom font-semibold   text-[11rem] md:text-[14rem] lg:text-[14rem]  text-justify">
+        <div className="leading-[100%] font-unica-custom font-bold   text-[12rem] md:text-[15rem] lg:text-[20rem] text-left">
           <p>MARS</p>
         </div>
         <div className="text-black-400 text-3xl  ">
-          <p className="text-4xl font-inter-custom text-justify  max-w-[32ch]">
-            Your thoughts, opinions, and suggestions matter to us. Only with
-            your feedback can we grow, improve, and truly reach our dreams.
+          <p className="text-4xl font-inter-custom text-left  max-w-[32ch]">
+         Your thoughts, opinions, and suggestions matter to us. With your feedback we will improve, grow and push our boundaries to see our dreams come true.
           </p>
         </div>
-        <div className="flex items-center py-1.5">
+        <div className="flex items-center py-3.5">
           <button
            onClick={onNext}
             type="button"

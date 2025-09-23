@@ -59,11 +59,11 @@ import Checklist from "./Checklist";
 
 function Sixthpage({ onNext }) {
   const options = [
-    "Visiting the Makerspace and building something",
-    "Making a donation",
-    "Volunteering at Parsec",
-    "Following Param on Social Media",
-    "Signing up for a Param Workshop",
+    "Visit Param’s Makerspace and building something",
+    "Make a donation",
+    "Volunteer at Parsec",
+    "Follow Param on Social Media",
+    "Sign up for a Param Workshop",
   ];
 
   const dispatch = useDispatch();

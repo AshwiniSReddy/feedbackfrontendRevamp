@@ -147,7 +147,8 @@ function Eight({ onNext }) {
     <div className='flex flex-col min-h-full bg-[url("/background.svg")] bg-no-repeat bg-cover items-center relative overflow-hidden'>
       <div className="flex flex-col items-start w-full px-28 py-28 gap-44 relative h-[20%]">
         <div className="leading-[100%] h-[40%] font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[5rem] text-justify flex flex-col gap-1.5">
-          <div>Any other feedback?</div>
+          <div>Anything else we </div>
+          <div>should know?</div>
         </div>
 
         <div className="flex flex-col justify-start gap-28 w-full font-inter-custom">
