@@ -3,14 +3,13 @@ import { useEffect, useState } from "react";
 import { Provider,useDispatch } from "react-redux";
 import { store } from "./store/store";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-
-import Firstpage from "./component/Firstpage";
+import Firstpage from './component/Fifthpage'
 import SecondPage from "./component/SecondPage";
-import Third from "./component/Third";
+import Third from './component/Third'
 import FourthPage from "./component/fourthPage";
 import Fifthpage from "./component/Fifthpage";
-import Sixthpage from "./component/Sixthpage";
-import SeventhPage from "./component/seventhPage";
+import Sixthpage from './component/Sixthpage'
+import SeventhPage from './component/SeventhPage'
 import Eight from './component/Eight'
 import NinethPage from "./component/NinethPage";
 import { resetSurvey } from "./features/survey/surveySlice";
