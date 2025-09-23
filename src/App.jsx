@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Provider,useDispatch } from "react-redux";
 import { store } from "./store/store";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import Firstpage from './component/Fifthpage'
+import Firstpage from './component/Firstpage'
 import SecondPage from "./component/SecondPage";
 import Third from './component/Third'
 import FourthPage from "./component/fourthPage";
