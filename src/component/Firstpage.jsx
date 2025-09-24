@@ -21,7 +21,7 @@ function Firstpage({onNext}) {
           <button
            onClick={onNext}
             type="button"
-            className="py-8 px-10 me-2 w-[20rem] mb-2 text-4xl font-medium font-inter-custom text-white focus:outline-none bg-transparent rounded-full border-2 border-black-200 hover:bg-gray-100 hover:text-black-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+            className="py-8 px-10 me-2 w-[20rem] mb-2 text-4xl font-medium font-inter-custom text-white-900 focus:outline-none bg-transparent rounded-full border-2 border-black-200 hover:text-black-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 "
           >
             Begin
           </button>
