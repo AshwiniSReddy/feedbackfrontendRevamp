@@ -2,10 +2,10 @@ import React from "react";
 
 function Firstpage({onNext}) {
   return (
-    <div className='flex flex-col min-h-full w-full bg-[url("/background.svg")] bg-cover bg-no-repeat px-8 py-28 items-center relative overflow-hidden'>
+    <div className='flex flex-col min-h-full w-full bg-[url("/background.svg")] bg-cover bg-no-repeat px-8 py-28 items-center relative overflow-hidden text-black'>
       <div className="flex flex-col py-24 px-12  items-start text-left  w-full gap-[1rem] overflow-hidden">
         <div className="text-justify w-full">
-          <p className="leading-[100%]  font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[5rem] ">
+          <p className="leading-[100%]  font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[5rem]">
            Help launch Parsec to {" "}
           </p>
         </div>

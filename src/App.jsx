@@ -9,8 +9,8 @@ import Third from './component/Third'
 import FourthPage from "./component/fourthPage";
 import Fifthpage from "./component/Fifthpage";
 import Sixthpage from './component/Sixthpage'
-import SeventhPage from './component/SeventhPage'
-import Eight from './component/Eight'
+import SeventhPage from "./component/seventhPage";
+import Eight from "./component/eight";
 import NinethPage from "./component/NinethPage";
 import { resetSurvey } from "./features/survey/surveySlice";
 

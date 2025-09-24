@@ -23,7 +23,7 @@ function Third({ onNext }) {
   };
 
   return (
-    <div className='flex flex-col min-h-full w-full bg-[url("/background.svg")] bg-cover bg-no-repeat items-center relative overflow-hidden'>
+    <div className='flex flex-col min-h-full w-full bg-[url("/background.svg")] bg-cover bg-no-repeat items-center relative overflow-hidden text-black'>
       <div className="flex flex-col items-start w-full px-28 py-28 gap-20 relative">
         <div className="leading-[100%] h-[40%] font-oxanium text-[3rem] md:text-[4rem] lg:text-[5rem] text-justify flex flex-col gap-1.5">
           <div>How did you find out </div>
