@@ -18,6 +18,13 @@ function NinethPage({ onHome ,isActive }) {
   return (
     <div className='flex flex-col h-full bg-[url("/background.svg")] bg-no-repeat bg-cover items-center relative overflow-hidden text-black'>
       <div className="flex flex-col justify-center items-start w-full px-28 py-28 gap-10 relative h-full">
+          <div className="absolute top-0 right-0 px-22 py-15" onClick={()=>onHome()}>
+           <img
+          src="/home_button.svg"
+          alt="astronaut"
+          className="w-[85px]"
+        />
+        </div>
         <div className="leading-[100%] font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[4rem] text-justify flex flex-col gap-1.5">
           <div>Mission Take</div>
           <div>off! 🚀</div>

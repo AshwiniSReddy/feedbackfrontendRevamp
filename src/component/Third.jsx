@@ -1,12 +1,12 @@
 // Third.jsx
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { setAnswer } from "../features/survey/surveySlice"; // <-- adjust the path to your slice
+import { setAnswer } from "../features/survey/surveySlice";
 
-function Third({ onNext }) {
+
+function Third({ onNext, onHome }) {
   const dispatch = useDispatch();
 
-  // Options for "How did you find out about Parsec Jayanagar?"
   const options = [
     "Google Search",
     "Word of Mouth",
@@ -16,15 +16,24 @@ function Third({ onNext }) {
   ];
 
   const pick = (label) => {
-    // update answer for question index 1
     dispatch(setAnswer({ questionIndex: 1, answer: label }));
-    // go to next page
     onNext?.();
   };
 
+ 
   return (
-    <div className='flex flex-col min-h-full w-full bg-[url("/background.svg")] bg-cover bg-no-repeat items-center relative overflow-hidden text-black'>
+    <div className="flex flex-col min-h-full w-full bg-[url('/background.svg')] bg-cover bg-no-repeat items-center relative overflow-hidden text-black">
       <div className="flex flex-col items-start w-full px-28 py-28 gap-20 relative">
+        {/* Home button */}
+        <div className="absolute top-0 right-0 px-22 py-15" onClick={onHome}>
+          <img
+            src="/home_button.svg"
+            alt="home"
+            className="w-[85px] cursor-pointer"
+          />
+        </div>
+
+        {/* Question */}
         <div className="leading-[100%] h-[40%] font-oxanium text-[3rem] md:text-[4rem] lg:text-[5rem] text-justify flex flex-col gap-1.5">
           <div>How did you find out </div>
           <div>about PARSEC </div>
@@ -36,14 +45,14 @@ function Third({ onNext }) {
           <div className="flex gap-3.5 justify-between w-full">
             <button
               onClick={() => pick(options[0])}
-              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border-1 border-black/20 hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-100"
+              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border border-black/20 hover:bg-gray-100"
             >
               {options[0]}
             </button>
 
             <button
               onClick={() => pick(options[1])}
-              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border-1 border-black/20 hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-100"
+              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border border-black/20 hover:bg-gray-100"
             >
               {options[1]}
             </button>
@@ -52,14 +61,14 @@ function Third({ onNext }) {
           <div className="flex gap-3.5 justify-between w-full">
             <button
               onClick={() => pick(options[2])}
-              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border-1 border-black/20 hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-100"
+              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border border-black/20 hover:bg-gray-100"
             >
               {options[2]}
             </button>
 
             <button
               onClick={() => pick(options[3])}
-              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border-1 border-black/20 hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-100"
+              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border border-black/20 hover:bg-gray-100"
             >
               {options[3]}
             </button>
@@ -68,7 +77,7 @@ function Third({ onNext }) {
           <div className="flex gap-3.5 justify-between w-full">
             <button
               onClick={() => pick(options[4])}
-              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border-1 border-black/20 hover:bg-gray-100 hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-100"
+              className="py-10 px-10 w-[50%] text-4xl font-medium text-gray-900 bg-white rounded-full border border-black/20 hover:bg-gray-100"
             >
               {options[4]}
             </button>
@@ -76,13 +85,12 @@ function Third({ onNext }) {
         </div>
       </div>
 
+      {/* Astronaut image */}
       <div className="absolute left-0 -bottom-[2%] right-1/4">
-        <img
-          src="/astrothirdpage.png"
-          alt="astronaut"
-          className="w-[100rem]"
-        />
+        <img src="/astrothirdpage.png" alt="astronaut" className="w-[100rem]" />
       </div>
+
+  
     </div>
   );
 }

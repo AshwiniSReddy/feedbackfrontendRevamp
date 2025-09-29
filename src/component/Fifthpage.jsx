@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 import { setAnswer } from "../features/survey/surveySlice"; // adjust path
 import Checklist from "./Checklist";
 
-function Fifthpage({ onNext }) {
+function Fifthpage({ onNext ,onHome}) {
   const options = [
     " Will definitely recommend Parsec to friends",
     "Will definitely recommend Parsec to family",
@@ -35,6 +35,13 @@ function Fifthpage({ onNext }) {
   return (
     <div className='flex flex-col min-h-full bg-[url("/background.svg")] bg-no-repeat bg-cover items-center relative overflow-hidden text-black'>
       <div className="flex flex-col items-start w-full px-28 py-28 gap-20 relative h-[20%]">
+          <div className="absolute top-0 right-0 px-22 py-15" onClick={onHome}>
+          <img
+            src="/home_button.svg"
+            alt="home"
+            className="w-[85px] cursor-pointer"
+          />
+        </div>
         <div className="leading-[100%] h-[40%] font-oxanium-custom text-[3rem] md:text-[4rem] lg:text-[5rem] text-justify flex flex-col gap-1.5">
           <div>Pick anything or </div>
           <div>everything:{')'}</div>

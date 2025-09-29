@@ -105,6 +105,7 @@ const initialState = {
   validationMessage: "",
   submitStatus: "idle", // 'idle' | 'loading' | 'succeeded' | 'failed'
   submitError: null,
+  
 };
 
 const surveySlice = createSlice({
