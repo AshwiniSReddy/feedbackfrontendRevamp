@@ -11,7 +11,7 @@ function Dialogbox({ hide, onHome }) {
     >
       {/* Dialog box */}
       <div
-        className="dialog-box w-[750px] max-w-[90%] h-auto bg-white p-10 rounded-2xl shadow-xl flex flex-col gap-4 text-center"
+        className="dialog-box w-[600px] max-w-[90%] h-auto bg-white p-10 rounded-2xl shadow-xl flex flex-col gap-4 text-center"
         onClick={(e) => e.stopPropagation()} // stop bubbling inside
       >
         <h2 className="text-3xl font-bold text-gray-800 font-oxanium-custom">🚀 Mars Mission paused...</h2>
