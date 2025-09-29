@@ -9,7 +9,7 @@ import Checklist from "./Checklist";
 
 function Sixthpage({ onNext }) {
   const options = [
-    "Visit Param’s Makerspace and building something",
+    "Visit Param’s Makerspace and build something",
     "Make a donation",
     "Volunteer at Parsec",
     "Follow Param on Social Media",
