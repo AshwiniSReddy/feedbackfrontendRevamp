@@ -7,11 +7,11 @@ const initialState = {
       id: 0,
       question: "Which gallery was your personal favorite?",
       image: [
-          "/Kinetic_kindom.JPG","/tactile_gallery.jpg","/navrasa_gallery.JPG","/puzzle_gallery.JPG","/light_gallery.JPG","/digital_gallery.JPG"
+          "/Kinetic_kindom.png","/tactile_gallery.png","/navrasa_gallery.png","/puzzle_gallery.png","/light_gallery.png","/digital_gallery.png"
       ],
       display_names: [
         "Kinetic Gallery",
-        "Tacktile Gallery",
+        "Tactile Gallery",
         "Navrasa Galley",
         "Puzzle Gallery",
         "Light Gallery",
